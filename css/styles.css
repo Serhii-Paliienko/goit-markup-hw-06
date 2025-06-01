@@ -627,6 +627,18 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .portfolio-item img {
+    width: 356px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .portfolio-item img {
+    width: 360px;
+  }
+}
+
 .portfolio-item {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
