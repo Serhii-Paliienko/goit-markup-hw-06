@@ -1087,6 +1087,13 @@ a {
   height: 100%;
   background-color: var(--primary-background-color);
   padding: 72px 24px 40px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .close-mobile-menu-btn {
@@ -1160,14 +1167,4 @@ a {
   color: #4d5ae5;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
 /* /MOBILE MENU STYLES */
-
-.mobile-menu {
-  display: none;
-}
