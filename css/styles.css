@@ -1067,10 +1067,18 @@ a {
 }
 
 .callback-form-checkbox-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+@media screen and (max-width: 767px) {
+  .terms-and-conditions {
+    width: 232px;
+  }
 }
 
 .privacy-policy-link {
@@ -1090,10 +1098,16 @@ a {
   height: 16px;
   fill: transparent;
   cursor: pointer;
-  margin-right: 8px;
+  margin-right: 7.5px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .callback-form-custom-checkbox {
+    margin-right: 8px;
+  }
 }
 
 .callback-form-checkbox:checked
